@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIBONACCI SERIES</title>
+            <script>
+             function generationFibonacci(){
+            let n = document.getElementById("inputN").value;
+            let a = 0
+            let b = 1;
+            let SERIES = "";
+            for(let i = 0; i<n; i++){
+                series+= a + " ";
+                let c = a+b;
+                a=b;
+                b=c;
+            }
+            document.getElementById("outputSeries").innerHTML=series;
+        }
+    </script>
+    </head>
+    <body>
+        <h1>FIBONACCI SERIES</h1>
+        <label for ="inputN">Enter the number of terms:</label>
+        <input type="number" id="inputN" name="inputN">
+        <button onclick="generationFibonacci()">Generate series</button>
+        <p id="outputSeries"></p>
+    </body>
+</html>
